@@ -32,22 +32,36 @@
         }
     }
 }
-
 #visual {
     width: 100%; height: calc(100vh - 100px); background: aqua;
 }
-
 #content {
     padding: 150px 0px;
 
     .inner {
-        width: 1180px; min-height: 500px; border: 1px solid #aaa; 
-        margin: 0px auto;
+        width: 1180px; margin: 0px auto;
+
+        h1 {
+            font: bold 20px/1 "arial"; color: #555; margin-bottom: 30px; text-align: center;
+        }
+        .wrap {  
+            article {
+                width: 280px; float: left; margin-right: 20px;
+                .pic {
+                    width: 100%; height: 150px; background: #555; margin-bottom: 15px; 
+                }
+                h2 {
+                    font: bold 15px/1 "arial"; color: #666; margin-bottom: 10px;
+                }
+                p {
+                    font: 12px/1.2 "arial"; color: #777;
+                }
+            }
+        }
     }
 }
-
 #footer {
-    width: 100%; padding: 100px 0px; border-top: 1px solid #ddd;
+    width: 100%; padding: 100px 0px; border-top: 1px solid #bbb;
 
     .inner {
         width: 1180px; margin: 0px auto; text-align: center;

@@ -9,6 +9,14 @@ a {
   text-decoration: none;
   outline: 1; }
 
+.wrap::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.wrap > article:last-child {
+  margin-right: 0px !important; }
+
 #header {
   width: 100%;
   border-bottom: 1px solid #ddd; }
@@ -51,14 +59,33 @@ a {
   padding: 150px 0px; }
   #content .inner {
     width: 1180px;
-    min-height: 500px;
-    border: 1px solid #aaa;
     margin: 0px auto; }
+    #content .inner h1 {
+      font: bold 20px/1 "arial";
+      color: #555;
+      margin-bottom: 30px;
+      text-align: center; }
+    #content .inner .wrap article {
+      width: 280px;
+      float: left;
+      margin-right: 20px; }
+      #content .inner .wrap article .pic {
+        width: 100%;
+        height: 150px;
+        background: #555;
+        margin-bottom: 15px; }
+      #content .inner .wrap article h2 {
+        font: bold 15px/1 "arial";
+        color: #666;
+        margin-bottom: 10px; }
+      #content .inner .wrap article p {
+        font: 12px/1.2 "arial";
+        color: #777; }
 
 #footer {
   width: 100%;
   padding: 100px 0px;
-  border-top: 1px solid #ddd; }
+  border-top: 1px solid #bbb; }
   #footer .inner {
     width: 1180px;
     margin: 0px auto;
