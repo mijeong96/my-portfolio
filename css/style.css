@@ -9,4 +9,37 @@ a {
   text-decoration: none;
   outline: 1; }
 
+#header {
+  width: 100%;
+  border-bottom: 1px solid #ddd; }
+  #header .inner {
+    width: 1180px;
+    height: 100px;
+    margin: 0px auto;
+    position: relative; }
+    #header .inner h1 {
+      position: absolute;
+      left: 0px;
+      bottom: 15px; }
+      #header .inner h1 a {
+        font: bold 22px/1 "arial";
+        color: #444; }
+    #header .inner #gnb {
+      position: absolute;
+      bottom: 0px;
+      right: 0px; }
+      #header .inner #gnb li {
+        float: left; }
+        #header .inner #gnb li a {
+          display: block;
+          width: 150px;
+          height: 50px;
+          font: bold 14px/50px "arial";
+          color: #555;
+          text-align: center;
+          transition: .5s; }
+          #header .inner #gnb li a:hover {
+            background: #555;
+            color: #fff; }
+
 /*# sourceMappingURL=style.css.map */
