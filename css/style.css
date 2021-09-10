@@ -42,4 +42,9 @@ a {
             background: #555;
             color: #fff; }
 
+#visual {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background: aqua; }
+
 /*# sourceMappingURL=style.css.map */
