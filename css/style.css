@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700&display=swap");
 * {
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+  box-sizing: border-box; }
 
 ul, ol {
   list-style: none; }
@@ -109,27 +111,60 @@ a {
     #header_sub .inner h1 {
       position: absolute;
       left: 0px;
-      bottom: 15px; }
+      bottom: 30px; }
       #header_sub .inner h1 a {
-        font: bold 22px/1 "arial";
-        color: #444; }
+        font: 24px/1 'Heebo';
+        color: #111; }
     #header_sub .inner #gnb {
       position: absolute;
-      bottom: 0px;
-      right: 0px; }
+      bottom: 45%;
+      left: 30%; }
+      #header_sub .inner #gnb::after {
+        content: '';
+        display: block;
+        clear: both; }
       #header_sub .inner #gnb li {
         float: left; }
         #header_sub .inner #gnb li a {
           display: block;
-          width: 150px;
-          height: 50px;
-          font: bold 14px/50px "arial";
-          color: #555;
+          font: 15px/1.6px 'Heebo';
+          color: #111;
+          font-weight: 700;
+          letter-spacing: -0.5px;
+          margin-right: 40px;
           text-align: center;
           transition: .5s; }
-          #header_sub .inner #gnb li a:hover {
-            background: #555;
-            color: #fff; }
+    #header_sub .inner .util {
+      position: absolute;
+      top: 40%;
+      right: 0%; }
+      #header_sub .inner .util::after {
+        content: '';
+        display: block;
+        clear: both; }
+      #header_sub .inner .util li {
+        float: left;
+        margin-left: 30px; }
+        #header_sub .inner .util li a {
+          display: block; }
+          #header_sub .inner .util li a:last-child {
+            font: 14px/1px 'Heebo';
+            color: #111; }
+          #header_sub .inner .util li a i {
+            font-size: 18px;
+            color: #111; }
+        #header_sub .inner .util li .serch {
+          width: 160px;
+          border-bottom: 1px solid #111; }
+          #header_sub .inner .util li .serch input {
+            width: 130px;
+            font-size: 16px;
+            padding: 5px;
+            border: none;
+            vertical-align: top;
+            margin-left: 0; }
+          #header_sub .inner .util li .serch a {
+            display: inline-block; }
 
 .content {
   width: 100%; }
@@ -147,14 +182,34 @@ a {
 #footer_sub {
   width: 100%;
   padding: 100px 0px;
-  border-top: 1px solid #bbb; }
+  background: #111; }
   #footer_sub .inner {
     width: 1180px;
-    margin: 0px auto;
-    text-align: center;
-    font: 12px/1 "arial";
-    color: #888;
-    letter-spacing: 1px; }
+    margin: 0 auto;
+    position: relative; }
+    #footer_sub .inner h1 {
+      position: absolute;
+      top: 60%;
+      left: 0;
+      font: 24px/1 "Heebo";
+      font-weight: 500;
+      color: #fff; }
+    #footer_sub .inner p {
+      position: absolute;
+      top: 75%;
+      left: 0;
+      font: 13px/1.2 "arial";
+      color: #999; }
+    #footer_sub .inner .txt::after {
+      content: '';
+      display: block;
+      clear: both; }
+    #footer_sub .inner .txt li {
+      float: left;
+      margin-right: 20px; }
+      #footer_sub .inner .txt li a {
+        font: 15px/1 "Heebo";
+        color: #fff; }
 
 .join .sub_visual {
   background: pink; }

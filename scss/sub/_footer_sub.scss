@@ -1,8 +1,42 @@
 #footer_sub {
-    width: 100%; padding: 100px 0px; border-top: 1px solid #bbb;
+    width: 100%; padding: 100px 0px; 
+    background: #111;
 
     .inner {
-        width: 1180px; margin: 0px auto; text-align: center;
-        font: 12px/1 "arial"; color: #888; letter-spacing: 1px;
+        width: 1180px;
+        margin: 0 auto;
+        position: relative;
+        
+        h1 {
+            position: absolute;
+            top: 60%;
+            left: 0;
+            font: 24px/1 "Heebo";
+            font-weight: 500;
+            color: #fff;
+        }
+
+        p {
+            position: absolute;
+            top: 75%;
+            left: 0;
+            font: 13px/1.2 "arial";
+            color: #999;
+        }
+
+        .txt {
+            &::after { content:''; display: block; clear: both;}
+
+            li {
+                float: left;
+                margin-right: 20px;
+
+                a {
+                    font: 15px/1 "Heebo";
+                    color: #fff;
+                }
+            }
+        }
     }
+
 }
