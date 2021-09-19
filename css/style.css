@@ -100,8 +100,7 @@ a {
     letter-spacing: 1px; }
 
 #header_sub {
-  width: 100%;
-  border-bottom: 1px solid #ddd; }
+  width: 100%; }
   #header_sub .inner {
     width: 1180px;
     height: 100px;
