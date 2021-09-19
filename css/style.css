@@ -88,7 +88,7 @@ a {
 #visual {
   width: 100%;
   height: calc(100vh - 100px);
-  background: aqua;
+  background: #ddd;
   display: flex;
   justify-content: center;
   align-items: center;
