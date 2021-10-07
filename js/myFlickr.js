@@ -5,8 +5,8 @@ $.ajax({
         api_key: "6d2ca35639d1d6bc10f4e95dc29073a6",
         per_page: 20,
         format: "json",
-        nojasoncallback: 1,
-        privacy_filter: 5,
+        nojsoncallback: 1,
+        privacy_filter: 20,
         tags: "landscape"
     }
 })
@@ -54,5 +54,23 @@ $.ajax({
     })
 })
 .error(function(err){
-    console.err("데이터를 호출하는 데 실패했습니다");
+    console.error("데이터를 호출하는 데 실패했습니다");
+})
+
+$("body").on("click", "#gallery ul li", function(e){
+    e.preventDefault();
+
+    let imgSrc = $(this).children("a").attr("href");
+
+    $("body").append(
+        $("<div class='pop'>")
+            .append(
+                $("<img>").attr({src:imgSrc}),
+                $("<span>").text("close")
+            )
+    )
+})
+
+$("body").on("click", ".pop span",function(){
+    $(".pop").remove();
 })
