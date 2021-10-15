@@ -117,7 +117,8 @@ a {
   #popup .close {
     float: right;
     font: bold 13px/1 "arial";
-    color: #222; }
+    color: #222;
+    cursor: pointer; }
 
 #visual {
   width: 100%;
