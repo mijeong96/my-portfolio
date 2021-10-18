@@ -492,21 +492,22 @@ fieldset {
       color: #777;
       margin-bottom: 20px; }
     .join .inner .end {
-      text-align: center; }
-    .join .inner input[type="reset"], .join .inner input[type="submit"] {
-      width: 270px;
-      height: 70px;
-      font: bold 15px/70px "arial";
-      margin-top: 50px;
-      border: 2px solid #111; }
-    .join .inner input[type="reset"] {
-      background: #fff;
-      color: #111;
-      transition: 0.5s; }
-      .join .inner input[type="reset"]:hover {
-        border: 2px solid #aaa; }
-    .join .inner input[type="submit"] {
-      background: #111;
-      color: #fff; }
+      text-align: center;
+      margin-bottom: 50px; }
+      .join .inner .end input[type="reset"], .join .inner .end input[type="submit"] {
+        width: 270px;
+        height: 70px;
+        font: bold 15px/70px "arial";
+        margin-top: 50px;
+        border: 2px solid #111; }
+      .join .inner .end input[type="reset"] {
+        background: #fff;
+        color: #111;
+        transition: 0.5s; }
+        .join .inner .end input[type="reset"]:hover {
+          border: 2px solid #aaa; }
+      .join .inner .end input[type="submit"] {
+        background: #111;
+        color: #fff; }
 
 /*# sourceMappingURL=style.css.map */

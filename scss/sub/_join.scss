@@ -143,28 +143,32 @@
 
         .end {
             text-align: center;
-        }
+            margin-bottom: 50px;
 
-        input[type="reset"], input[type="submit"] {
-            width: 270px; 
-            height: 70px;
-            font: bold 15px/70px "arial"; 
-            margin-top: 50px;
-            border: 2px solid #111;
-        }
-
-        input[type="reset"] {
-            background: #fff;
-            color: #111;
-            transition: 0.5s;
-
-            &:hover {
-                border: 2px solid #aaa;
+            input[type="reset"], input[type="submit"] {
+                width: 270px; 
+                height: 70px;
+                font: bold 15px/70px "arial"; 
+                margin-top: 50px;
+                border: 2px solid #111;
             }
+    
+            input[type="reset"] {
+                background: #fff;
+                color: #111;
+                transition: 0.5s;
+    
+                &:hover {
+                    border: 2px solid #aaa;
+                }
+            }
+            input[type="submit"] {
+                background: #111;
+                color: #fff;
+            }
+        
         }
-        input[type="submit"] {
-            background: #111;
-            color: #fff;
-        }
+
+        
     }
 }
