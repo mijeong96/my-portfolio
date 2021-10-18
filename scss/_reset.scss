@@ -1,7 +1,7 @@
 * {
     margin: 0px; padding: 0px; box-sizing:border-box;
 }
-ul, ol {
+ul, ol, li {
     list-style: none;
 }
 a {
@@ -15,4 +15,14 @@ a {
 }
 .wrap>article:last-child {
     margin-right: 0px!important;
+}
+
+fieldset {
+    border: none;
+}
+
+.h {
+    position: absolute;
+    top: -9999px;
+    opacity: 0;
 }

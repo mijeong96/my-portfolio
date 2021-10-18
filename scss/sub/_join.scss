@@ -1,5 +1,161 @@
 .join {
+    width: 100%;
+
     .sub_visual {
-        background: pink;
+        width: 100%; height: 250px;  
+        background: #efefef;
+        margin-bottom: 100px;
+    }
+    .inner {
+        width: 1180px; min-height: 500px; 
+        margin: 0px auto 100px;
+        position: relative;
+
+        h1 {
+            width: 100%;
+            height: 100px;
+            font: 60px/1 "맑은 고딕";
+            color: #111;
+            text-align: center;
+        }
+
+        ol {
+            position: absolute;
+            right: 0;
+            top: 7%;
+            display: inline;
+            font: 18px/1 "맑은 고딕";
+            li {
+                float: left;
+                margin-right: 20px;
+
+                &:nth-of-type(1){
+                    color: #111;
+                }
+                &:nth-of-type(3){
+                    color: #999;
+                    margin-right: 0;
+                }
+            }
+
+        }
+
+        h2 {
+            width: 100%;
+            font: 30px/1 "맑은 고딕";
+            color: #111;
+            border-bottom: 3px solid #111;
+            margin-top: 20px;
+            padding: 20px 0;
+        }
+
+        .joinAgr {
+            label {
+                display: block;
+                width: 100%;
+                font: 20px/1 "맑은 고딕";
+                color: #111;
+                letter-spacing: -0.5px;
+                margin-top: 30px;
+                margin-bottom: 20px;
+            }
+
+            textarea {
+                resize: none;
+                width: 100%;
+                height: 250px;
+                padding: 20px;
+                font: 15px/1.6 "맑은 고딕";
+                color: #888;
+                border: 1px solid #ccc;
+                margin-bottom: 15px;
+            }
+
+            input[type="checkbox"] {
+                width: 15px;
+                height: 15px;
+            }
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+
+            tr {
+                border-bottom: 1px solid #ddd;
+
+                th {
+                    width: 20%;
+                    padding: 20px 0;
+                    text-align: left;
+                    font: 17px/1 "맑은 고딕";
+                    color: #111;
+                }
+
+                td {
+                    width: 80%;
+                    padding: 20px 40px;
+                }
+            }
+
+            input[type="text"], input[type="password"], select {
+                width: 40%;
+                height: 50px;
+                border: 1px solid #e3e3e3;
+                padding: 0 15px;
+                font: 16px/50px "맑은 고딕";
+                color: #444;
+            }
+
+            input[type="radio"] {
+                width: 20px;
+                height: 20px;
+                margin-left: 20px;
+                label {
+                    display: inline;
+                }
+            }
+        }
+
+        .marketing {
+            width: 100%;
+            font: 20px/1 "맑은 고딕";
+            color: #555;
+            padding: 30px 0;
+            border-bottom: 1px solid #ddd;
+            margin-right: 30px;
+            margin-bottom: 40px;
+
+            input[type="checkbox"] {
+                margin-left: 50px;
+                margin-right: 10px;
+                width: 18px;
+                height: 18px;
+            }
+        }
+
+        .wrap p {
+            width: 100%;
+            font: 17px/1 "arial";
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        .end {
+            text-align: center;
+        }
+
+        input[type="reset"], input[type="submit"] {
+            width: 270px; 
+            height: 70px;
+            font: 25px/70px "arial"; 
+            margin-top: 50px;
+        }
+
+        input[type="reset"]{
+            border: 1px solid #111;
+            background: #fff;
+            color: #111;
+        }
     }
 }
