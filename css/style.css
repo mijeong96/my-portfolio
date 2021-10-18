@@ -424,7 +424,7 @@ fieldset {
       font: 30px/1 "맑은 고딕";
       color: #111;
       border-bottom: 3px solid #111;
-      margin-top: 20px;
+      margin-top: 30px;
       padding: 20px 0; }
     .join .inner .joinAgr label {
       display: block;
@@ -496,11 +496,17 @@ fieldset {
     .join .inner input[type="reset"], .join .inner input[type="submit"] {
       width: 270px;
       height: 70px;
-      font: 25px/70px "arial";
-      margin-top: 50px; }
+      font: bold 15px/70px "arial";
+      margin-top: 50px;
+      border: 2px solid #111; }
     .join .inner input[type="reset"] {
-      border: 1px solid #111;
       background: #fff;
-      color: #111; }
+      color: #111;
+      transition: 0.5s; }
+      .join .inner input[type="reset"]:hover {
+        border: 2px solid #aaa; }
+    .join .inner input[type="submit"] {
+      background: #111;
+      color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
